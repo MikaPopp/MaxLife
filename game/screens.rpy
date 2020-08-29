@@ -407,7 +407,7 @@ style main_menu_title:
 style main_menu_version:
     properties gui.text_properties("version")
 
-
+define gui.main_menu_background = Movie(play="Get Stick Bugged lol.webm")
 ## Game Menu screen ############################################################
 ##
 ## This lays out the basic common structure of a game menu screen. It's called
