@@ -43,7 +43,7 @@ label start:
 
     scene bg lava
     show boss sprite
-    play music "boss.mp3"
+    play music "<from 153 to 294>boss.mp3" fadein 1.0 loop
 
     boss "DU BIST ALSO DIE MAUER AUF DER LAUER"
     boss "JETZT KANN ICH DICH ENDLICH IN DEN TOPF STECKEN UND KOCHEN"
