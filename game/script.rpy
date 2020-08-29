@@ -52,10 +52,16 @@ label start:
         "Wer ist der uLow denn?"
 
         "Weirdflex.":
-            "Komischer Winkelschleifer, aber ok."
+            stop music
+            play sound "ded.mp3"
+            "Komischer Winkelschleifer, aber ok."                   
 
         "Weirdflex big":
+            stop music  
+            play sound "ded.mp3"
             "Ganz komischer flex."
+            
+            
 
     boss "Ok. :("
 
