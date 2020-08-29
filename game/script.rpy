@@ -1,5 +1,6 @@
-﻿#test kommentar1
+#test kommentar1
 # The script of the game goes in this file.
+#testkommentar2
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
