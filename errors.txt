@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 7: unexpected EOF while parsing
+    Character("Max");
+                     ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Sun Aug 30 00:28:33 2020
