@@ -7,6 +7,7 @@
 
 define e = Character("Narrator")
 define boss = Character("Max")
+define farright = Position(xpos=0.89)
 
 # The game starts here.
 
@@ -42,28 +43,25 @@ label start:
     #Hier kommt der Bosskampf
 
     scene bg lava
-    show boss sprite
+    show boss sprite at farright
     play music "<from 153 to 294>boss.mp3" fadein 1.0 loop
 
     boss "DU BIST ALSO DIE MAUER AUF DER LAUER"
     boss "JETZT KANN ICH DICH ENDLICH IN DEN TOPF STECKEN UND KOCHEN"
 
     menu: 
-        "Wer ist der uLow denn?"
+        e "Wer ist der uLow denn?"
 
-        "Weirdflex.":
+        "Sie ist einfach lesbisch.":
             stop music
-            play sound "ded.mp3"
-            "Komischer Winkelschleifer, aber ok."                   
+            play sound "ded.mp3"                   
 
-        "Weirdflex big":
+        "Du kleiner Splasher.":
             stop music  
             play sound "ded.mp3"
-            "Ganz komischer flex."
             
             
-
-    boss "Ok. :("
+    boss ":("
 
     e "So endete der Kampf gegen Max."
     e "Ende."
