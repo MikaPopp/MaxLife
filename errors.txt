@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 7: unexpected EOF while parsing
-    Character("Max");
-                     ^
+File "game/script.rpy", line 55: expected statement.
+    renpy.music.set_volume(0.3, 0, 'music')
+                                           ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Aug 30 00:28:33 2020
+Sun Aug 30 02:32:57 2020

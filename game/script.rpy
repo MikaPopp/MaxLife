@@ -43,7 +43,7 @@ label start:
 
     scene bg lava
     show boss sprite
-    play music "<from 153 to 294>boss.mp3" fadein 1.0 loop
+    play music "<from 153 to 254>boss.mp3" fadein 2.0
 
     boss "DU BIST ALSO DIE MAUER AUF DER LAUER"
     boss "JETZT KANN ICH DICH ENDLICH IN DEN TOPF STECKEN UND KOCHEN"
@@ -52,13 +52,17 @@ label start:
         "Wer ist der uLow denn?"
 
         "Weirdflex.":
-            stop music
-            play sound "ded.mp3"
+            $renpy.music.set_volume(0.7, 0, 'music')
+            play sound ded
+            $renpy.music.set_volume(1.0, 0, 'music')
+            #music.set_volume(volume, delay=1, channel="music") 
             "Komischer Winkelschleifer, aber ok."                   
 
         "Weirdflex big":
-            stop music  
-            play sound "ded.mp3"
+            $renpy.music.set_volume(0.7, 0, 'music')
+            play sound ded
+            $renpy.music.set_volume(1.0, 0, 'music')
+            #music.set_volume(volume, delay=1, channel="music") 
             "Ganz komischer flex."
             
             
