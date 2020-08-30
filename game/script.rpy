@@ -95,7 +95,7 @@ label start:
     scene buschei with vpunch   
     scene buschei with hpunch
     $renpy.music.set_volume(1.0, 0, 'music')
-    play music "bigsad.mp3" 
+    play music bigsad
     
 
     show kaneki
