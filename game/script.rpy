@@ -94,12 +94,12 @@ label start:
     #Back to Basics
     scene buschei with vpunch   
     scene buschei with hpunch
-    $renpy.music.set_volume(5.0, 0, 'music')
+    $renpy.music.set_volume(1.0, 0, 'music')
     play music "bigsad.mp3" 
     
 
     show kaneki
-    kaneki "Jetzt kriegst dus mit mir zu tun"
+    kaneki "Jetzt kriegst du's mit mir zu tun"
 
 
     # This ends the game.

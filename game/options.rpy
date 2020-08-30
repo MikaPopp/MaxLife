@@ -29,7 +29,8 @@ define config.version = "0.1"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""Das Spiel wurde als Andenken an einen Freund erstellt, dieser weilt immer noch mit uns, 
+                         dennoch wollten wir seine Genialität nicht ohne Meisterwerk schwinden lassen.
 """)
 
 
