@@ -1,22 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 47, in script
-    volume music "0.3"
-Exception: Sayer 'volume' is not defined.
+  File "game/script.rpy", line 91, in script
+    scene buschei with (vpunch,hpunch)
+TypeError: 'tuple' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 47, in script
-    volume music "0.3"
-  File "C:\Users\Stefan Jan\Desktop\test\renpy-7.3.5-sdk\renpy\ast.py", line 678, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Stefan Jan\Desktop\test\renpy-7.3.5-sdk\renpy\ast.py", line 576, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'volume' is not defined.
+  File "game/script.rpy", line 91, in script
+    scene buschei with (vpunch,hpunch)
+  File "D:\Visualding\renpy-7.3.5-sdk\renpy\ast.py", line 1389, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "D:\Visualding\renpy-7.3.5-sdk\renpy\exports.py", line 1601, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\Visualding\renpy-7.3.5-sdk\renpy\display\core.py", line 2251, in do_with
+    clear=clear)
+  File "D:\Visualding\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "D:\Visualding\renpy-7.3.5-sdk\renpy\display\core.py", line 3047, in interact_core
+    new_widget=layers_root)
+TypeError: 'tuple' object is not callable
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 Max Life 0.1
-Sun Aug 30 02:23:36 2020
+Sun Aug 30 03:53:19 2020

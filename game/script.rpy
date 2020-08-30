@@ -3,10 +3,13 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+
+
 define e = Character("Narrator")
 define boss = Character("Max")
+define kaneki = Character("Kaneki Ken")
 define farright = Position(xpos=0.89)
-
+define flash = Fade(0.1, 0.0, 0.5, color="#fff")    
 # The game starts here.
 
 label start:
@@ -42,7 +45,9 @@ label start:
 
     scene bg lava
 
-    show boss sprite
+    
+    show boss sprite 
+    show hpbar at topleft
     play music "<from 153 to 254>boss.mp3" fadein 2.0
     show boss sprite at farright
 
@@ -64,24 +69,38 @@ label start:
             $renpy.music.set_volume(0.7, 0, 'music')
             play sound ded
             $renpy.music.set_volume(1.0, 0, 'music') 
-            "Ganz komischer flex."
+            boss "Ganz komischer flex."
 
         "Sie ist einfach lesbisch":
             $renpy.music.set_volume(0.7, 0, 'music')
             play sound ded
             $renpy.music.set_volume(1.0, 0, 'music')
-            "All woMEN are queens."                   
+            boss "All woMEN are queens."                   
 
         "Du kleiner Splasher":
             $renpy.music.set_volume(0.7, 0, 'music')
             play sound ded
             $renpy.music.set_volume(1.0, 0, 'music')
-            "If she breaths she is a THOT."
-               
-    boss ":("
-
+            boss "If she breaths she is a THOT."
+    
+    scene bg lava with flash        
+   
+    boss  ":("
+    
     e "So endete der Kampf gegen Max."
     e "Ende."
+    stop music 
+
+    #Back to Basics
+    scene buschei with vpunch   
+    scene buschei with hpunch
+    $renpy.music.set_volume(5.0, 0, 'music')
+    play music "bigsad.mp3" 
+    
+
+    show kaneki
+    kaneki "Jetzt kriegst dus mit mir zu tun"
+
 
     # This ends the game.
 
