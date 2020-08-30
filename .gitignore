@@ -6,3 +6,8 @@ game/saves/auto-5-LT1.save
 *.rpymc
 log.txt
 *.rpyc
+*.rpyb
+errors.txt
+traceback.txt
+game/saves/persistent
+game/saves/navigation.json
