@@ -7,6 +7,7 @@
 
 define e = Character("Narrator")
 define boss = Character("Max")
+define farright = Position(xpos=0.89)
 
 # The game starts here.
 
@@ -42,14 +43,17 @@ label start:
     #Hier kommt der Bosskampf
 
     scene bg lava
+
     show boss sprite
     play music "<from 153 to 254>boss.mp3" fadein 2.0
+    show boss sprite at farright
+
 
     boss "DU BIST ALSO DIE MAUER AUF DER LAUER"
     boss "JETZT KANN ICH DICH ENDLICH IN DEN TOPF STECKEN UND KOCHEN"
 
     menu: 
-        "Wer ist der uLow denn?"
+        e "Wer ist der uLow denn?"
 
         "Weirdflex.":
             $renpy.music.set_volume(0.7, 0, 'music')
@@ -61,13 +65,22 @@ label start:
         "Weirdflex big":
             $renpy.music.set_volume(0.7, 0, 'music')
             play sound ded
-            $renpy.music.set_volume(1.0, 0, 'music')
-            #music.set_volume(volume, delay=1, channel="music") 
+            $renpy.music.set_volume(1.0, 0, 'music') 
             "Ganz komischer flex."
-            
-            
 
-    boss "Ok. :("
+        "Sie ist einfach lesbisch":
+            $renpy.music.set_volume(0.7, 0, 'music')
+            play sound ded
+            $renpy.music.set_volume(1.0, 0, 'music')
+            "All woMEN are queens."                   
+
+        "Du kleiner Splasher":
+            $renpy.music.set_volume(0.7, 0, 'music')
+            play sound ded
+            $renpy.music.set_volume(1.0, 0, 'music')
+            "If she breaths she is a THOT."
+               
+    boss ":("
 
     e "So endete der Kampf gegen Max."
     e "Ende."
