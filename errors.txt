@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 41: expected statement.
-    vpunch
-          ^
-
-File "game/script.rpy", line 42: expected statement.
-    hpunch
-          ^
+File "game/script.rpy", line 114: expected statement.
+    flash
+         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Aug 30 20:46:47 2020
+Tue Sep 01 03:25:37 2020
